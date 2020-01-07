@@ -2,15 +2,27 @@ $primary-color: green;
 $secondary-color: lightgreen;
 $light-color: white;
 $dark-color: black;
+$gray-color: #292828;
 $medium-color: lightgrey;
 $default-border: $medium-color 1px solid;
 $nav-height: 6vh;
 $nav-width: 100vw;
+$codeblock-font: 'Roboto', sans-serif;
  
 * {
   margin: 0;
   padding: 0;
   font-family: "Lora", serif;
+}
+
+/*DISPLAYS*/
+
+.display--block {
+  display: block;
+}
+
+.display--none {
+  display: none;
 }
 
 /*HEADER NAVIGATION*/
@@ -115,6 +127,34 @@ $nav-width: 100vw;
 
 main {
   padding: 10%;
+}
+
+/*code example box*/
+
+.codebox {
+  background-color: $dark-color;
+  color: $light-color;
+
+  ul{
+    display: flex;
+  }
+
+  li{
+    list-style-type: none;
+    width: 10%;
+    font-family: $codeblock-font;
+    padding: 1%;
+  }
+
+  li:hover{
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+
+  &__content {
+    background-color: $gray-color;
+    min-height: 20vh;
+  }
 }
 
 /*FOOTER*/
