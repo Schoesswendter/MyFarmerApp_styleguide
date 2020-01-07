@@ -4,30 +4,30 @@
     font-family: 'Lora', serif;
 }
 
-.topnav{
+.topnav {
     height: 6vh;
     width: 100vw;
     display: flex;
-    border-bottom:lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
     padding: 1%;
     position: fixed;
     background-color: white;
     justify-content: space-around;
 }
 
-#topnav_logosection{
+#topnav_logosection {
     height: 6vh;
     display: flex;
     width: 10vw;
 }
 
 #topnav_linksection {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
 
-#topnav_linksection a{
+#topnav_linksection a {
     text-decoration: none;
     font-weight: 900;
     color: darkgreen;
@@ -35,8 +35,8 @@
 }
 
 .topnav img {
-       padding: 1px;
-       flex-basis: 8vw;
+    padding: 1px;
+    flex-basis: 8vw;
 }
 
 .topnav p {
@@ -101,18 +101,18 @@ main {
     margin-bottom: 10%;
 }
 
-hr{
+hr {
     color: lightgray;
 }
 
-footer{
+footer {
     height: 4vw;
     width: 100%;
     background-color: lightgreen;
-    text-align:center;
+    text-align: center;
 }
 
-#colorblockBlack{
+#colorblockBlack {
     background-color: black;
 }
 
