@@ -1,11 +1,12 @@
 $primary-color: green;
+$secondary-color: lightgreen;
 $light-color: white;
 $dark-color: black;
 $medium-color: lightgrey;
-$default-border: lightgray 1px solid;
+$default-border: $medium-color 1px solid;
 $nav-height: 6vh;
 $nav-width: 100vw;
-
+ 
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ $nav-width: 100vw;
   justify-content: space-around;
 
   &__logosection {
-    height: 6vh;
+    height: $nav-height;
     display: flex;
     width: 10vw;
   }
@@ -46,8 +47,7 @@ $nav-width: 100vw;
 
     a {
       text-decoration: none;
-      font-weight: 900;
-      color: darkgreen;
+      color: $primary-color;
       padding: 10px;
     }
   }
@@ -63,8 +63,8 @@ $nav-width: 100vw;
   &__dropbtn2,
   &__dropbtn3,
   &__dropbtn4 {
-    background-color: white;
-    color: green;
+    background-color: $light-color;
+    color: $primary-color;
     font-size: 2.5vh;
     padding: 1.36vh;
     border: none;
@@ -76,23 +76,24 @@ $nav-width: 100vw;
   &__content4 {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: $light-color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 
     a {
-      color: black;
+      color: $dark-color;
       text-decoration: none;
       display: block;
     }
 
     a:hover {
-      background-color: lightgray;
+      background-color: $medium-color;
     }
   }
+}
 
-  .dropdown:hover {
+.dropdown:hover {
     .dropdown__content,
     .dropdown__content2,
     .dropdown__content3,
@@ -104,11 +105,11 @@ $nav-width: 100vw;
     .dropdown__dropbtn2,
     .dropdown__dropbtn3,
     .dropdown__dropbtn4 {
-      background-color: green;
-      color: white;
+      background-color: $primary-color;
+      color: $light-color;
     }
   }
-}
+
 
 /*MAIN CONTENT*/
 
@@ -121,6 +122,6 @@ main {
 footer {
   height: 4vw;
   width: 100%;
-  background-color: lightgreen;
+  background-color: $secondary-color;
   text-align: center;
 }
