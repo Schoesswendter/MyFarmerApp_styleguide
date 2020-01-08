@@ -134,7 +134,6 @@ main {
 .codebox {
   background-color: $gray-color;
   color: $light-color;
-  text-align: center;
 
   ul{
     display: flex;
@@ -142,9 +141,10 @@ main {
 
   li{
     list-style-type: none;
-    width: 10%;
+    width: 70%;
     font-family: $codeblock-font;
     padding: 1%;
+    background-color: $dark-color;
   }
 
   li:hover{
@@ -160,6 +160,15 @@ main {
 
 .codebox__content--example {
   margin: .5em 0;
+}
+
+.defaultpre {
+  margin: 0;
+  padding: 0;
+}
+
+pre[class*="language-"] {
+  margin: 0;
 }
 
 /*FOOTER*/
