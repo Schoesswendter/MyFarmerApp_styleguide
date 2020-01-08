@@ -8,11 +8,13 @@ $default-border: $medium-color 1px solid;
 $nav-height: 6vh;
 $nav-width: 100vw;
 $codeblock-font: 'Roboto', sans-serif;
+$app-content-color: #FFFEF2;
  
 * {
   margin: 0;
   padding: 0;
   font-family: "Lora", serif;
+  border-radius: 5px;
 }
 
 /*DISPLAYS*/
@@ -171,10 +173,51 @@ pre[class*="language-"] {
   margin: 0;
 }
 
+/* Codeblock AppContent */
+
+.appcontent {
+  min-height: 10vh;
+  width: 90%;
+  background-color: $app-content-color;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin:0 auto;
+}
+
+.codebox__content--contentBlockExample {
+  margin-top: 5%;
+}
+
+/* Codeblock Heading */
+
+.codebox__content--headingExample {
+  h1 {
+    color: white;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding: 2%;
+    text-align: center;
+  }
+  h2{
+    color: black;
+    font-family: 'Slabo 27px', serif;
+    font-weight: lighter;
+    padding: 1%;
+    text-align: center;
+  }
+  h3{
+    color: white;
+    font-family: 'Slabo 27px', serif;
+    text-align: left;
+    font-weight: lighter;
+    padding: 1%;
+  }
+}
+
 /*FOOTER*/
 
 footer {
-  height: 4vw;
   width: 100%;
   background-color: $secondary-color;
   text-align: center;
