@@ -15,7 +15,6 @@ $transparent-color: rgba(0, 0, 0, 0);
     margin: 0;
     padding: 0;
     font-family: "Lora", serif;
-    border-radius: 5px;
 }
 
 
@@ -126,6 +125,23 @@ main {
     padding: 10%;
 }
 
+#h1--uppercase {
+    text-transform: uppercase;
+    font-size: 4em;
+    padding-bottom: 2vh;
+}
+
+h2, h3 {
+    padding: 2vh 0;
+}
+
+h2{
+    border-bottom: $default-border;
+}
+
+h3{
+    font-size: 1.3em;
+}
 
 /*code example box*/
 
@@ -225,8 +241,7 @@ pre[class*="language-"] {
     }
     li::before {
         content: url('../dist/images/growth.svg');
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 20px;
     }
     li:hover {
         background-color: $transparent-color;
