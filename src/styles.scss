@@ -131,7 +131,7 @@ main {
     padding-bottom: 2vh;
 }
 
-h2, h3 {
+h2, h3, h4 {
     padding: 2vh 0;
 }
 
@@ -262,18 +262,38 @@ pre[class*="language-"] {
 
 /*Codeblock Button*/
 
-.bell--activated {
+.bell--activated, .bell--deactivated, .bell--activated2, .bell--deactivated2 {
     fill: $light-color;
     height: 10vh;
     margin: 0 auto;
 }
 
-.bell--deactivated {
-    fill: $light-color;
-    height: 10vh;
-    margin: 0 auto;
+.appcontent {
+    .bell--activated2, .bell--deactivated2 {
+        fill: $dark-color;
+    }
 }
 
+.codebox__content--buttonBlockExample {
+    .appcontent{
+        display: flex;
+        color: $dark-color;
+        font-family: 'Slabo 27px', serif;
+        p {
+            padding: 5% 2vw;
+            width: 400%;
+            font-size: 1.5em;
+        }
+        svg {
+            margin-top: 3.5%;
+            height: 6vh;
+        }
+    }
+
+    .appcontent:hover{
+        box-shadow: 1px 1px 1px 1px $medium-color;
+    }
+}
 
 /*FOOTER*/
 
