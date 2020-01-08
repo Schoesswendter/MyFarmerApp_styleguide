@@ -148,6 +148,7 @@ h3{
 .codebox {
     background-color: $gray-color;
     color: $light-color;
+    margin: 2vh 0;
     ul {
         display: flex;
     }
@@ -166,6 +167,10 @@ h3{
         background-color: $gray-color;
         min-height: 20vh;
     }
+}
+
+.codebox__content{
+    padding: 5vh 0;
 }
 
 .codebox__content--example {
@@ -215,6 +220,7 @@ pre[class*="language-"] {
         font-weight: lighter;
         padding: 1%;
         text-align: center;
+        border:none;
     }
     h3 {
         color: white;
@@ -222,6 +228,11 @@ pre[class*="language-"] {
         text-align: left;
         font-weight: lighter;
         padding: 1%;
+        margin-left: 5%;
+    }
+
+    .appcontent{
+        min-height: 0;
     }
 }
 
@@ -247,6 +258,20 @@ pre[class*="language-"] {
         background-color: $transparent-color;
         cursor: auto;
     }
+}
+
+/*Codeblock Button*/
+
+.bell--activated {
+    fill: $light-color;
+    height: 10vh;
+    margin: 0 auto;
+}
+
+.bell--deactivated {
+    fill: $light-color;
+    height: 10vh;
+    margin: 0 auto;
 }
 
 

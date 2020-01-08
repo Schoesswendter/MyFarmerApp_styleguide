@@ -12,6 +12,7 @@
     <div id="app"></div>
     <script src="bundle.js"></script>
 
+<!-- Top Navigation / fixed header-->
     <header>
         <nav class="topnav">
             <div class="topnav__logosection">
@@ -64,12 +65,17 @@
             <h1 id="h1--uppercase">Styleguide</h1>
             <p>We create a mobile web application for gardeners and farmers. We want our visitors to have a simple overview of the weather data and the plants. There are plenty of tipps in terms of all kind of plants.
             </p>
+
+            <!-- Brang Guide -->
             <h2>Brand Guide</h2>
             <h3>Colors</h3>
 
+            <!-- Components-->
             <h2>Components</h2>
 
             <h3>Contentblock</h3>
+
+            <!--Code Example Contentblock-->
 
             <div class="codebox show--example">
                 <nav>
@@ -100,8 +106,14 @@
                     </div>
                 </div>
             </div>
-<p>This Contentblock is used to store the main Content of our Webapplication. All content except h1, h3 and the Plantimage are stored in blocks like this. </p>
+
+            <!-- Description Contentblock -->
+
+            <p>This Contentblock is used to store the main Content of our Webapplication. All content except h1, h3 and the Plantimage are stored in blocks like this. </p>
+            
             <h3>Headings</h3>
+
+            <!-- Show Example Headings -->
 
             <div class="codebox show--example">
                 <nav>
@@ -152,8 +164,14 @@ h3{
                     </div>
                 </div>
             </div>
+
+            <!-- Description Headings-->
+
             <p>The Heading 1 is used for the Name of the plants in their detailed view. Heading 2 is a heading used for smaller headings in the contentblocks e.g. the month in the calender. The last heading is only used to mute / unmute weathernotifications.</p>
+            
             <h3>Lists</h3>
+
+            <!-- Show Example Lists -->
 
             <div class="codebox show--example">
                 <nav>
@@ -208,7 +226,44 @@ li:hover {
                 </div>
             </div>
 
+            <!-- Description Lists -->
+
+            <p>Our lists are used to show tips and details about plants. We use different icons as bullet points, the icons should show the user what detail the listpoint shows. For example: a watering can to show how often you need to water a certain plant.</p>
+
             <h3>Buttons</h3>
+
+            <!-- Show Example Button 1 -->
+
+            <div class="codebox show--example">
+                <nav>
+                    <ul>
+                        <li>Example</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </nav>
+                <div class="codebox__content">
+                    <div class="codebox__content--contentBlockExample">
+                        <svg class="bell--activated" height="512pt" viewBox="-45 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0"/></svg>
+                        <svg class="bell--deactivated display--none" height="512pt" viewBox="-45 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="370pt" x2="300pt" y2="130" style="stroke:rgb(255,255,255);stroke-width:30"/><path d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0"/></svg>
+                    </div>
+                    <div class="codebox__content--html display--none">
+                        <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="codebox__content--css display--none">
+                        <pre><code class="language-css">.appcontent {
+  min-height: 10vh;
+  width: 90%;
+  background-color: #FFFEF2;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin:0 auto;
+}</code></pre>
+                    </div>
+                </div>
+            </div>            
+
+
             <h3>Form Elements</h3>
             <h3>Navigation</h3>
         </div>
@@ -216,11 +271,16 @@ li:hover {
     <footer>
         <p>Styleguide von Julia und Michaela! :))</p>
         <p>Icons from: https://www.flaticon.com/</p>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         <p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
     </footer>
 </body>
 
 <script>
+
+
+    // Codeblock
+
     Prism.highlightAll();
 
     const liElements = document.querySelectorAll('li');
@@ -266,6 +326,26 @@ li:hover {
     liElements.forEach(function(li) {
         li.addEventListener('click', handleLiClick);
     })
+
+    // Bell activation
+
+    let bellActivated = document.querySelector(".bell--activated");
+    let bellDeactivated = document.querySelector(".bell--deactivated");
+
+    bellActivated.addEventListener('click', function() {
+        bellActivated.classList.add("display--none");
+        bellActivated.classList.remove("display--block");
+        bellDeactivated.classList.remove("display--none");
+        bellDeactivated.classList.add("display--block");
+    })
+
+    bellDeactivated.addEventListener('click', function() {
+        bellDeactivated.classList.remove("display--block");
+        bellDeactivated.classList.add("display--none");
+        bellActivated.classList.remove("display--none");
+        bellActivated.classList.add("display--block");
+    })
+
 </script>
 
 </html>
