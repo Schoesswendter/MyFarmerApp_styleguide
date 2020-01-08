@@ -132,8 +132,9 @@ main {
 /*code example box*/
 
 .codebox {
-  background-color: $dark-color;
+  background-color: $gray-color;
   color: $light-color;
+  text-align: center;
 
   ul{
     display: flex;
@@ -155,6 +156,10 @@ main {
     background-color: $gray-color;
     min-height: 20vh;
   }
+}
+
+.codebox__content--example {
+  margin: .5em 0;
 }
 
 /*FOOTER*/
