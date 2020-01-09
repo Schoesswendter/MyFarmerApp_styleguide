@@ -339,9 +339,56 @@ pre[class*="language-"] {
     
 }
 
+/* Codeblock navigation */
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5% 1%;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: $light-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  .navigation--app {
+      img{
+        height: 5vh;
+        float: right;       
+        position: absolute;        
+        margin-left: 30%;        
+        padding: 0.5vh;
+      }
+  }
 /* Layout */
 
-
+.navigation--app{
+    background-color: rgba(34, 59, 20, 0.8);
+    height: 6vh;
+    width: 60%;
+    margin: 0 auto;
+}
 
 /*FOOTER*/
 
