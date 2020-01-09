@@ -13,7 +13,7 @@
     <div id="app"></div>
     <script src="bundle.js"></script>
 
-<!-- Top Navigation / fixed header-->
+    <!-- Top Navigation / fixed header-->
     <header>
         <nav class="topnav">
             <div class="topnav__logosection">
@@ -24,36 +24,36 @@
                 <div class="dropdown">
                     <button class="dropdown__dropbtn">Brand Guide</button>
                     <div class="dropdown__content">
-                        <a href="#">Introduction</a>
-                        <a href="#">Colors</a>
-                        <a href="#">Typography</a>
-                        <a href="#">Logo</a>
+                        <a href="#introduction">Introduction</a>
+                        <a href="#colors">Colors</a>
+                        <a href="#typography">Typography</a>
+                        <a href="#logo">Logo</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown__dropbtn2">CSS Methodology</button>
                     <div class="dropdown__content2">
-                        <a href="#">Code Style</a>
-                        <a href="#">Class Naming</a>
+                        <a href="#codeStyle">Code Style</a>
+                        <a href="#classNaming">Class Naming</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown__dropbtn3">Component Library</button>
                     <div class="dropdown__content3">
-                        <a href="#">Contentblock</a>
-                        <a href="#">Headings</a>
-                        <a href="#">Lists</a>
-                        <a href="#">Buttons</a>
-                        <a href="#">Form Elements</a>
-                        <a href="#">Navigation</a>
+                        <a href="#contentblock">Contentblock</a>
+                        <a href="#headings">Headings</a>
+                        <a href="#lists">Lists</a>
+                        <a href="#buttons">Buttons</a>
+                        <a href="#formElements">Form Elements</a>
+                        <a href="#navigation">Navigation</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown__dropbtn4">Layouts</button>
                     <div class="dropdown__content4">
-                        <a href="#">One</a>
-                        <a href="#">Two</a>
-                        <a href="#">Three</a>
+                        <a href="#weather">1 Weather</a>
+                        <a href="#calender">2 Calender</a>
+                        <a href="#details">3 Details</a>
                     </div>
                 </div>
             </div>
@@ -63,79 +63,101 @@
 
     <main>
         <div class="main">
-            <h1 id="h1--uppercase">Styleguide</h1>
-            <p>
-                Our Application „MyFarmerApp” helps farmers, gardeners and hobby gardeners how to grow their plants successfully and how to take proper care of them. <br> 
-                In order to do so we combined the knowledge of a plant encyclopedia and the topicality of a weather app in one project.<br> Due to the steady growth of this 
-                project we decided to create style guide for our application and the image of our brand.<br><br> This style guide helps our designers, developers, partners and 
-                customers to comprehend and reproduce the consistent Design of MyFarmerApp.
-            </p>
-
+            <section id="introduction">
+                <h1 id="h1--uppercase">Styleguide</h1>
+                <p>
+                    Our Application „MyFarmerApp” helps farmers, gardeners and hobby gardeners how to grow their plants
+                    successfully and how to take proper care of them. <br>
+                    In order to do so we combined the knowledge of a plant encyclopedia and the topicality of a weather
+                    app
+                    in one project.<br> Due to the steady growth of this
+                    project we decided to create style guide for our application and the image of our brand.<br><br>
+                    This
+                    style guide helps our designers, developers, partners and
+                    customers to comprehend and reproduce the consistent Design of MyFarmerApp.
+                </p>
+            </section>
             <!-- Brand Guide -->
             <h2>Brand Guide</h2>
-            <h3>Colors</h3>
-            <p>
-                Since MyFarmerApp is closely connected to working with plants and therefore should be associated with nature, the color palette was chosen to reflect that intent.<br>
-                It consists mainly of shades ranging from green to brown. For a better readability and to prevent the over saturation of colors, the text is displayed in black on a white background. 
-            </p>
-
-            <h3>Typography</h3>
-            <p>
-                MyFarmerApp uses the Google Font “Lora” as main font. The brushed and curvy design of this font prevents a too strict and serious appearance and represents a more soft and casual style. 
-                <br>Link: <a href="https://fonts.google.com/specimen/Lora">Google Font Lora</a><br>
-                <br>As second fall back font-family we use Serif.
-            </p>
-            
-            <h3>Logo</h3>
-            <p>
-                Our Logo represents the calm nature of gardening and connects it with the positive aspects of a live as “farmer”. 
-                To point out the process of growing something the sprout was added. The size of the logo can be adapted as needed, 
-                but it must still be recognizable. The logo is available in color and in black and transparent, which is only to be 
-                used for purposes where single color is needed.
-            </p>
-            <!-- <img src="images/sprout_sheep.svg" alt="logo"> -->
+            <section id="colors">
+                <h3>Colors</h3>
+                <p>
+                    Since MyFarmerApp is closely connected to working with plants and therefore should be associated
+                    with nature, the color palette was chosen to reflect that intent.<br>
+                    It consists mainly of shades ranging from green to brown. For a better readability and to prevent
+                    the over saturation of colors, the text is displayed in black on a white background.
+                </p>
+            </section>
+            <section id="typography">
+                <h3>Typography</h3>
+                <p>
+                    MyFarmerApp uses the Google Font “Lora” as main font. The brushed and curvy design of this font
+                    prevents
+                    a too strict and serious appearance and represents a more soft and casual style.
+                    <br>Link: <a href="https://fonts.google.com/specimen/Lora">Google Font Lora</a><br>
+                    <br>As second fall back font-family we use Serif.
+                </p>
+            </section>
+            <section id="logo">
+                <h3>Logo</h3>
+                <p>
+                    Our Logo represents the calm nature of gardening and connects it with the positive aspects of a live
+                    as
+                    “farmer”.
+                    To point out the process of growing something the sprout was added. The size of the logo can be
+                    adapted
+                    as needed,
+                    but it must still be recognizable. The logo is available in color and in black and transparent,
+                    which is
+                    only to be
+                    used for purposes where single color is needed.
+                </p>
+                <!-- <img src="images/sprout_sheep.svg" alt="logo"> -->
+            </section>
 
             <h2>CSS Methodology</h2>
-
-            <h3>Code Style</h3>
-            <p>
-            </p>
-            <h3>Class Naming</h3>
-            <p>
-	        As class naming convention we are using the BEM-Syntax (Block Element Modifier).<br>
-            This means every independent block has its own CSS-Class and the elements are part of 
-            this block, but cannot be reused separately. The element-names are connected to the block 
-            by a double underscore “__” and the added subelements have one underscore “_”. If there are 
-            multiple words the spaces are represented by two hyphen “--“.<br><br>In addition to BEM we uses 
-            SASS with the SCSS-Syntax, which helps to implement the BEM naming conventions in CSS. 
-            </p>
-
+            <section id="codeStyle">
+                <h3>Code Style</h3>
+                <p>
+                </p>
+            </section>
+            <section id="classNaming">
+                <h3>Class Naming</h3>
+                <p>
+                    As class naming convention we are using the BEM-Syntax (Block Element Modifier).<br>
+                    This means every independent block has its own CSS-Class and the elements are part of
+                    this block, but cannot be reused separately. The element-names are connected to the block
+                    by a double underscore “__” and the added subelements have one underscore “_”. If there are
+                    multiple words the spaces are represented by two hyphen “--“.<br><br>In addition to BEM we uses
+                    SASS with the SCSS-Syntax, which helps to implement the BEM naming conventions in CSS.
+                </p>
+            </section>
             <!-- Components-->
             <h2>Components</h2>
+            <section id="contentblock">
+                <h3>Contentblock</h3>
 
-            <h3>Contentblock</h3>
+                <!--Code Example Contentblock-->
 
-            <!--Code Example Contentblock-->
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--contentBlockExample">
+                            <div class="appcontent">
 
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--contentBlockExample">
-                        <div class="appcontent">
-
+                            </div>
                         </div>
-                    </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css">.appcontent {
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">.appcontent {
   min-height: 10vh;
   width: 90%;
   background-color: #FFFEF2;
@@ -143,43 +165,46 @@
   border-radius: 5px;
   margin:0 auto;
 }</code></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Description Contentblock -->
+                <!-- Description Contentblock -->
 
-            <p>This Contentblock is used to store the main Content of our Webapplication. All content except h1, h3 and the Plantimage are stored in blocks like this. </p>
-            
-            <h3>Headings</h3>
+                <p>This Contentblock is used to store the main Content of our Webapplication. All content except h1, h3
+                    and
+                    the Plantimage are stored in blocks like this. </p>
+            </section>
+            <section id="headings">
+                <h3>Headings</h3>
 
-            <!-- Show Example Headings -->
+                <!-- Show Example Headings -->
 
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--headingExample">
-                        <h1>Heading 1</h1>
-                        <div class="appcontent">
-                            <h2>Heading 2</h2>
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--headingExample">
+                            <h1>Heading 1</h1>
+                            <div class="appcontent">
+                                <h2>Heading 2</h2>
+                            </div>
+                            <h3>Heading 3</h3>
+
                         </div>
-                        <h3>Heading 3</h3>
-
-                    </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 </code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css">h1 {
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">h1 {
   color: white;
   font-family: 'Slabo 27px', serif;
   letter-spacing: 2px;
@@ -201,49 +226,54 @@ h3{
   font-weight: lighter;
   padding: 1%;
 }</code></pre>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Description Headings-->
-
-            <p>The Heading 1 is used for the Name of the plants in their detailed view. Heading 2 is a heading used for smaller headings in the contentblocks e.g. the month in the calender. The last heading is only used to mute / unmute weathernotifications.</p>
-            
-            <h3>Lists</h3>
-
-            <!-- Show Example Lists -->
-
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--lists">
-                        <div class="appcontent">
-                            <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                                <li>Point 3</li>
-                                <li>Point 4</li>
-                                <li>Point 5</li>
-                            </ul>
                         </div>
                     </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;ul&gt;
+                </div>
+
+                <!-- Description Headings-->
+
+                <p>The Heading 1 is used for the Name of the plants in their detailed view. Heading 2 is a heading used
+                    for
+                    smaller headings in the contentblocks e.g. the month in the calender. The last heading is only used
+                    to
+                    mute / unmute weathernotifications.</p>
+            </section>
+            <section id="lists">
+                <h3>Lists</h3>
+
+                <!-- Show Example Lists -->
+
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--lists">
+                            <div class="appcontent">
+                                <ul>
+                                    <li>Point 1</li>
+                                    <li>Point 2</li>
+                                    <li>Point 3</li>
+                                    <li>Point 4</li>
+                                    <li>Point 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;ul&gt;
     &lt;li&gt;Point 1&lt;/li&gt;
     &lt;li&gt;Point 2&lt;/li&gt;
     &lt;li&gt;Point 3&lt;/li&gt;
     &lt;li&gt;Point 4&lt;/li&gt;
     &lt;li&gt;Point 5&lt;/li&gt;
 &lt;ul&gt;</code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css">ul {
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">ul {
     display: block;
 }
 li {
@@ -262,38 +292,52 @@ li:hover {
     background-color: $transparent-color;
     cursor: auto;
 }</code></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Description Lists -->
+                <!-- Description Lists -->
 
-            <p>Our lists are used to show tips and details about plants. We use different icons as bullet points, the icons should show the user what detail the listpoint shows. For example: a watering can to show how often you need to water a certain plant.</p>
+                <p>Our lists are used to show tips and details about plants. We use different icons as bullet points,
+                    the
+                    icons should show the user what detail the listpoint shows. For example: a watering can to show how
+                    often you need to water a certain plant.</p>
+            </section>
+            <section id="buttons">
+                <h3>Buttons</h3>
 
-            <h3>Buttons</h3>
+                <h4>Button to mute the weathernotifications</h4>
 
-            <h4>Button to mute the weathernotifications</h4>
+                <!-- Show Example Button 1 -->
 
-            <!-- Show Example Button 1 -->
-
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--buttonBlockExample">
-                        <svg class="bell--activated display--block" height="512pt" viewBox="-45 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0"/></svg>
-                        <svg class="bell--deactivated display--none" height="512pt" viewBox="-45 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="370pt" x2="300pt" y2="130" style="stroke:rgb(255,255,255);stroke-width:30"/><path d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0"/></svg>
-                    </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;svg class="bell--activated display--block" ... &gt;&lt;/svg&gt;
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--buttonBlockExample">
+                            <svg class="bell--activated display--block" height="512pt" viewBox="-45 0 512 512"
+                                width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0" />
+                            </svg>
+                            <svg class="bell--deactivated display--none" height="512pt" viewBox="-45 0 512 512"
+                                width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="370pt" x2="300pt" y2="130"
+                                    style="stroke:rgb(255,255,255);stroke-width:30" />
+                                <path
+                                    d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0" />
+                            </svg>
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;svg class="bell--activated display--block" ... &gt;&lt;/svg&gt;
 &lt;svg class="bell--deactivated display--none" ... &gt;&lt;svg&gt;
 </code></pre>
-<pre><code class="language-js">
+                            <pre><code class="language-js">
 let bellActivated = document.querySelector(".bell--activated");
 let bellDeactivated = document.querySelector(".bell--deactivated");
 
@@ -311,9 +355,9 @@ bellDeactivated.addEventListener('click', function() {
     bellActivated.classList.add("display--block");
 })   
 </code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css">.bell--activated {
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">.bell--activated {
     fill: $light-color;
     height: 10vh;
     margin: 0 auto;
@@ -324,42 +368,52 @@ bellDeactivated.addEventListener('click', function() {
     height: 10vh;
     margin: 0 auto;
 }</code></pre>
-                    </div>
-                </div>
-            </div>   
-            
-            <!-- Button Description 1 -->
-
-            <p>This Button is used to mute and unmute weathernotifications.</p>
-
-            <h4>My Plant button + mute button</h4>
-
-            <!-- Show Example Button 2 -->
-
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--buttonBlockExample">
-                        <div class="appcontent">
-                            <p>My Plant 1</p>
-                            <svg class="bell--activated2 display--block" height="512pt" viewBox="-45 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0"/></svg>
-                            <svg class="bell--deactivated2 display--none" height="512pt" viewBox="-45 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="370pt" x2="300pt" y2="130" style="stroke:rgb(0,0,0);stroke-width:30"/><path d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0"/></svg>
                         </div>
                     </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;div class="appcontent"&gt;
+                </div>
+
+                <!-- Button Description 1 -->
+
+                <p>This Button is used to mute and unmute weathernotifications.</p>
+
+                <h4>My Plant button + mute button</h4>
+
+                <!-- Show Example Button 2 -->
+
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--buttonBlockExample">
+                            <div class="appcontent">
+                                <p>My Plant 1</p>
+                                <svg class="bell--activated2 display--block" height="512pt" viewBox="-45 0 512 512"
+                                    width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0" />
+                                </svg>
+                                <svg class="bell--deactivated2 display--none" height="512pt" viewBox="-45 0 512 512"
+                                    width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0" y1="370pt" x2="300pt" y2="130"
+                                        style="stroke:rgb(0,0,0);stroke-width:30" />
+                                    <path
+                                        d="m422 437c0-37.292969-27.363281-68.304688-63.066406-74.039062l-30.035156-119.273438c-6.046876-26.195312-20.953126-49.953125-41.988282-66.917969-8.933594-7.207031-18.847656-13.039062-29.355468-17.414062l12.246093-86.691407c.878907-4.140624 1.324219-8.355468 1.324219-12.539062 0-33.152344-26.972656-60.125-60.125-60.125s-60.125 26.972656-60.125 60.125c0 4.183594.445312 8.398438 1.324219 12.539062l12.246093 86.691407c-10.507812 4.375-20.417968 10.207031-29.351562 17.414062-21.035156 16.960938-35.945312 40.722657-41.992188 66.914063l-30.035156 119.277344c-35.703125 5.734374-63.066406 36.746093-63.066406 74.039062v15h137.507812c6.96875 34.191406 37.273438 60 73.492188 60s66.523438-25.808594 73.492188-60h137.507812zm-94.246094-75h-233.507812l7.554687-30h218.402344zm-145.925781-294.082031-.214844-1.175781c-.488281-2.191407-.738281-4.421876-.738281-6.617188 0-16.609375 13.515625-30.125 30.125-30.125s30.125 13.515625 30.125 30.125c0 2.199219-.25 4.425781-.738281 6.617188l-.128907.585937-11.863281 83.964844c-5.742187-.839844-11.550781-1.292969-17.394531-1.292969s-11.652344.453125-17.394531 1.292969zm-59.523437 182.636719c9.53125-41.542969 46.003906-70.554688 88.695312-70.554688s79.164062 29.011719 88.695312 70.554688l12.953126 51.445312h-203.292969l12.875-51.140625zm88.695312 231.445312c-19.554688 0-36.226562-12.539062-42.421875-30h84.84375c-6.195313 17.460938-22.867187 30-42.421875 30zm-178.429688-60c6.191407-17.460938 22.871094-30 42.429688-30h272c19.558594 0 36.238281 12.539062 42.429688 30zm0 0" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;div class="appcontent"&gt;
     &lt;p&gt;My Plant 1&lt;/p&gt;
     &lt;svg class="bell--activated display--block" ... &gt;&lt;/svg&gt;
     &lt;svg class="bell--deactivated display--none" ... &gt;&lt;svg&gt;
 &lt;/div&gt;
 </code></pre>
-<pre><code class="language-js">
+                            <pre><code class="language-js">
 let bellActivated = document.querySelector(".bell--activated");
 let bellDeactivated = document.querySelector(".bell--deactivated");
 
@@ -377,9 +431,9 @@ bellDeactivated.addEventListener('click', function() {
     bellActivated.classList.add("display--block");
 })   
 </code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css">.appcontent{
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">.appcontent{
     display: flex;
     color: $dark-color;
     font-family: 'Slabo 27px', serif;
@@ -397,80 +451,84 @@ bellDeactivated.addEventListener('click', function() {
 .appcontent:hover{
     box-shadow: 1px 1px 1px 1px $medium-color;
 }</code></pre>
-                    </div>
-                </div>
-            </div>   
-            
-            <!-- Button Description 2 -->
-
-            <p>This Button is used to get to the Detailsite of a plant. You can also mute and unmute tips of the plant.</p>
-
-
-            <h3>Form Elements</h3>
-
-            <h4>Dropdown</h4>
-
-            <!-- Show Example Form -->
-
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--contentForm">
-                        <div class="appcontent">
-                            <button class="dropdown-btn">Please select your Hometown... 
-                                <i class="fa fa-caret-down"></i>
-                              </button>
-                              <div class="dropdown-container">
-                                <a href="#">Saalfelden am Steinernen Meer</a>
-                                <a href="#">Salzburg</a>
-                                <a href="#">Fucking</a>
-                              </div>
                         </div>
                     </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css"></code></pre>
+                </div>
+
+                <!-- Button Description 2 -->
+
+                <p>This Button is used to get to the Detailsite of a plant. You can also mute and unmute tips of the
+                    plant.
+                </p>
+            </section>
+            <section id="formElements">
+                <h3>Form Elements</h3>
+
+                <h4>Dropdown</h4>
+
+                <!-- Show Example Form -->
+
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--contentForm">
+                            <div class="appcontent">
+                                <button class="dropdown-btn">Please select your Hometown...
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-container">
+                                    <a href="#">Saalfelden am Steinernen Meer</a>
+                                    <a href="#">Salzburg</a>
+                                    <a href="#">Fucking</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css"></code></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Description Forms -->
+                <!-- Description Forms -->
 
-            <p>This Dropdown menu is used for the user to choose which town they want to see the weather information from.</p>
+                <p>This Dropdown menu is used for the user to choose which town they want to see the weather information
+                    from.</p>
+            </section>
+            <section id="navigation">
+                <h3>Navigation</h3>
 
-            <h3>Navigation</h3>
+                <!-- Show Example Navigation -->
 
-            <!-- Show Example Navigation -->
-
-            <div class="codebox show--example">
-                <nav>
-                    <ul>
-                        <li>Example</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </nav>
-                <div class="codebox__content">
-                    <div class="codebox__content--contentForm">
-                        <nav class="navigation--app">
-                            <div class="container" onclick="burgermenue(this)">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                            </div> 
-                            <img src="images/sprout_sheep.svg" alt="logo">
-                        </nav>
-                    </div>
-                    <div class="codebox__content--html display--none">
-                        <pre><code class="language-html">&lt;nav class="navigation--app"&gt;
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--contentForm">
+                            <nav class="navigation--app">
+                                <div class="container" onclick="burgermenue(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                                <img src="images/sprout_sheep.svg" alt="logo">
+                            </nav>
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;nav class="navigation--app"&gt;
     &lt;div class="container" onclick="burgermenue(this)"&gt;
         &lt;div class="bar1"&gt;&lt;div&gt;
         &lt;div class="bar2"&gt;&lt;div&gt;
@@ -478,9 +536,9 @@ bellDeactivated.addEventListener('click', function() {
     &lt;div&gt;
     &lt;img src="images/sprout_sheep.svg" alt="logo"&gt;
 &lt;nav&gt;</code></pre>
-                    </div>
-                    <div class="codebox__content--css display--none">
-                        <pre><code class="language-css">.container {
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">.container {
     display: inline-block;
     cursor: pointer;
     padding: 0.5% 1%;
@@ -518,35 +576,53 @@ bellDeactivated.addEventListener('click', function() {
         padding: 0.5vh;
     }
 }</code></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Description Navigation -->
+                <!-- Description Navigation -->
 
-            <p>The Navigation is seen on every page. It's a simple burger menu that navigates to all the main pages.</p>
-
+                <p>The Navigation is seen on every page. It's a simple burger menu that navigates to all the main pages.
+                </p>
+            </section>
             <!-- Layout Section -->
 
             <h2>Layouts</h2>
-            <h3>1 Weather</h3>
-            <img src="images/layout1.png" alt="One Layout to rule them all">
-            <p>In this Layout you can see the startpage of the MyFarmerApp. The Navigation is like on the other pages. There is a Dropdown menu to choose the right town. The Detailed Weather Contentblock shows todays weather by default - you can click on other small weather content blocks to see them as detailed weather blocks.<br>The last element of the page is a muteblock, you can mute and unmute push notifications.</p>
-
-            <h3>2 Calender</h3>
-            <img src="images/layout2.png" alt="One Layout to find them all">
-            <p>This Layout shows the basic layout of the calender page. There is a Content block that shows this months weeks and a mooncalender. There is also a Contentblock for tips for the current date.</p>
-
-            <h3>3 Detail</h3>
-            <img src="images/layout3.png" alt="One Layout to bring them all">
-            <p>This Layout is the Detailed View of a plant. At top of the page, there is a image of the choosen plant. The heading displays the name of the plant. The Contentblock Detail shows details of the plants like "height, need for water, planting time, etc.".</p>
+            <section id="weather">
+                <h3>1 Weather</h3>
+                <img src="images/layout1.png" alt="One Layout to rule them all">
+                <p>In this Layout you can see the startpage of the MyFarmerApp. The Navigation is like on the other
+                    pages.
+                    There is a Dropdown menu to choose the right town. The Detailed Weather Contentblock shows todays
+                    weather by default - you can click on other small weather content blocks to see them as detailed
+                    weather
+                    blocks.<br>The last element of the page is a muteblock, you can mute and unmute push notifications.
+                </p>
+            </section>
+            <section id="calender">
+                <h3>2 Calender</h3>
+                <img src="images/layout2.png" alt="One Layout to find them all">
+                <p>This Layout shows the basic layout of the calender page. There is a Content block that shows this
+                    months
+                    weeks and a mooncalender. There is also a Contentblock for tips for the current date.</p>
+            </section>
+            <section id="details">
+                <h3>3 Detail</h3>
+                <img src="images/layout3.png" alt="One Layout to bring them all">
+                <p>This Layout is the Detailed View of a plant. At top of the page, there is a image of the choosen
+                    plant.
+                    The heading displays the name of the plant. The Contentblock Detail shows details of the plants like
+                    "height, need for water, planting time, etc.".</p>
+            </section>
         </div>
     </main>
     <footer>
         <p>Styleguide von Julia und Michaela! :))</p>
         <p>Icons from: https://www.flaticon.com/</p>
-        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        <p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
     </footer>
 </body>
 
@@ -597,7 +673,7 @@ bellDeactivated.addEventListener('click', function() {
         }
     }
 
-    liElements.forEach(function(li) {
+    liElements.forEach(function (li) {
         li.addEventListener('click', handleLiClick);
     })
 
@@ -608,14 +684,14 @@ bellDeactivated.addEventListener('click', function() {
 
     console.log(bellActivated);
 
-    bellActivated.addEventListener('click', function() {
+    bellActivated.addEventListener('click', function () {
         bellActivated.classList.add("display--none");
         bellActivated.classList.remove("display--block");
         bellDeactivated.classList.remove("display--none");
         bellDeactivated.classList.add("display--block");
     })
 
-    bellDeactivated.addEventListener('click', function() {
+    bellDeactivated.addEventListener('click', function () {
         bellDeactivated.classList.remove("display--block");
         bellDeactivated.classList.add("display--none");
         bellActivated.classList.remove("display--none");
@@ -627,14 +703,14 @@ bellDeactivated.addEventListener('click', function() {
 
     console.log(bellActivated);
 
-    bellActivated2.addEventListener('click', function() {
+    bellActivated2.addEventListener('click', function () {
         bellActivated2.classList.add("display--none");
         bellActivated2.classList.remove("display--block");
         bellDeactivated2.classList.remove("display--none");
         bellDeactivated2.classList.add("display--block");
     })
 
-    bellDeactivated2.addEventListener('click', function() {
+    bellDeactivated2.addEventListener('click', function () {
         bellDeactivated2.classList.remove("display--block");
         bellDeactivated2.classList.add("display--none");
         bellActivated2.classList.remove("display--none");
@@ -642,26 +718,26 @@ bellDeactivated.addEventListener('click', function() {
     })
 
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
 
-/* burger menu*/
+    /* burger menu*/
 
-function burgermenue(x) {
-  x.classList.toggle("change");
-} 
+    function burgermenue(x) {
+        x.classList.toggle("change");
+    }
 
 </script>
 
