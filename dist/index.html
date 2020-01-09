@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -70,7 +71,7 @@
                 customers to comprehend and reproduce the consistent Design of MyFarmerApp.
             </p>
 
-            <!-- Brang Guide -->
+            <!-- Brand Guide -->
             <h2>Brand Guide</h2>
             <h3>Colors</h3>
             <p>
@@ -406,6 +407,45 @@ bellDeactivated.addEventListener('click', function() {
 
 
             <h3>Form Elements</h3>
+
+            <h4>Dropdown</h4>
+
+            <!-- Show Example Form -->
+
+            <div class="codebox show--example">
+                <nav>
+                    <ul>
+                        <li>Example</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </nav>
+                <div class="codebox__content">
+                    <div class="codebox__content--contentForm">
+                        <div class="appcontent">
+                            <button class="dropdown-btn">Please select your Hometown... 
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                              <div class="dropdown-container">
+                                <a href="#">Saalfelden am Steinernen Meer</a>
+                                <a href="#">Salzburg</a>
+                                <a href="#">Fucking</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="codebox__content--html display--none">
+                        <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="codebox__content--css display--none">
+                        <pre><code class="language-css"></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description Forms -->
+
+            <p>This Dropdown menu is used for the user to choose which town they want to see the weather information from.</p>
+
             <h3>Navigation</h3>
         </div>
     </main>
@@ -507,6 +547,22 @@ bellDeactivated.addEventListener('click', function() {
         bellActivated2.classList.remove("display--none");
         bellActivated2.classList.add("display--block");
     })
+
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
 
 </script>
 
