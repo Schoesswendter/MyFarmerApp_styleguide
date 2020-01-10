@@ -148,6 +148,17 @@ img{
     width: 250px;
 }
 
+/* TEST */
+.imagebox{
+    max-width: 200px;
+    max-height: 200px;
+    background-color: red;
+    img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
 /*code example box*/
 
 .codebox {

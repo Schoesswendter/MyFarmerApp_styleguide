@@ -66,12 +66,14 @@
             <section id="introduction">
                 <h1 id="h1--uppercase">Styleguide</h1>
                 <p>
-                    Our Application „MyFarmerApp” helps farmers, gardeners and hobby gardeners how to grow their plants
-                    successfully and how to take proper care of them. <br>
+                    Our Application „MyFarmerApp” shows farmers, gardeners and hobby gardeners how to grow their plants
+                    successfully and how to take proper care of them. 
+                </p>
+                <p>
                     In order to do so we combined the knowledge of a plant encyclopedia and the topicality of a weather
                     app
-                    in one project.<br> Due to the steady growth of this
-                    project we decided to create style guide for our application and the image of our brand.<br><br>
+                    in one project. Due to the steady growth of this
+                    project we decided to create style guide for our application and the image of our brand.
                     This
                     style guide helps our designers, developers, partners and
                     customers to comprehend and reproduce the consistent Design of MyFarmerApp.
@@ -83,9 +85,10 @@
                 <h3>Colors</h3>
                 <p>
                     Since MyFarmerApp is closely connected to working with plants and therefore should be associated
-                    with nature, the color palette was chosen to reflect that intent.<br>
+                    with nature, the color palette was chosen to reflect that intent.
                     It consists mainly of shades ranging from green to brown. For a better readability and to prevent
                     the over saturation of colors, the text is displayed in black on a white background.
+                    <div class="imagebox"></div>
                 </p>
             </section>
             <section id="typography">
@@ -94,43 +97,99 @@
                     MyFarmerApp uses the Google Font “Lora” as main font. The brushed and curvy design of this font
                     prevents
                     a too strict and serious appearance and represents a more soft and casual style.
-                    <br>Link: <a href="https://fonts.google.com/specimen/Lora">Google Font Lora</a><br>
-                    <br>As second fall back font-family we use Serif.
+                </p>
+                <p>
+                    Link: <a href="https://fonts.google.com/specimen/Lora">Google Font Lora</a><br>
+                </p>
+                <p>
+                    As second fall back font-family we use Serif.
                 </p>
             </section>
             <section id="logo">
                 <h3>Logo</h3>
                 <p>
-                    Our Logo represents the calm nature of gardening and connects it with the positive aspects of a live
-                    as
-                    “farmer”.
-                    To point out the process of growing something the sprout was added. The size of the logo can be
-                    adapted
-                    as needed,
-                    but it must still be recognizable. The logo is available in color and in black and transparent,
-                    which is
-                    only to be
-                    used for purposes where single color is needed.
+                    The size of the logo can beadapted as needed,
+                    but it must still be recognizable and therefore should not have a lower height than 150px. 
+                    The logo is available in color and in black. 
+                    The black version is only to be used for purposes where single color is needed.
                 </p>
-                <!-- <img src="images/sprout_sheep.svg" alt="logo"> -->
+                <div class= "imagebox">
+                <img src="images/sprout_sheep.svg" alt="logo">
+                <p><a href="images/sprout_sheep.svg" download="MyFarmerApp_Logo.svg">Download Logo here</a></p>
+                </div>
+                <div class = "imagebox">
+                    <img src="images/sprout_sheep_dark.svg" alt="logo">
+                    <p><a href="images/sprout_sheep_dark.svg" download="MyFarmerApp_Logo_Dark.svg">Download Black Logo here</a></p>
+                    </div>
             </section>
 
             <h2>CSS Methodology</h2>
             <section id="codeStyle">
                 <h3>Code Style</h3>
                 <p>
+                    Indentations, Units, File Structure, pre-processor
                 </p>
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>Example</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--contentBlockExample">
+                            SOON
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">SOON</code></pre>
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css"> SOON
+</code></pre>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="classNaming">
                 <h3>Class Naming</h3>
                 <p>
-                    As class naming convention we are using the BEM-Syntax (Block Element Modifier).<br>
-                    This means every independent block has its own CSS-Class and the elements are part of
-                    this block, but cannot be reused separately. The element-names are connected to the block
-                    by a double underscore “__” and the added subelements have one underscore “_”. If there are
-                    multiple words the spaces are represented by two hyphen “--“.<br><br>In addition to BEM we uses
+                    As class naming convention we are using the BEM-Syntax (Block Element Modifier).
+                    This means every independent block has its own CSS-Class for styling and is named individually. The elements are part of
+                    their block and cannot be reused separately from it. The element-names are connected to the block
+                    by a double underscore “__” and the added subelements have one underscore “_”. Modifiers are added to the name by two hypen "--" and 
+                    multi-word Names are separated by a single hyphen "-". In addition to BEM we uses
                     SASS with the SCSS-Syntax, which helps to implement the BEM naming conventions in CSS.
                 </p>
+                <!--START-->
+                
+                <div class="codebox show--example">
+                    <nav>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </nav>
+                    <div class="codebox__content">
+                        <div class="codebox__content--contentBlockExample">
+                        </div>
+                        <div class="codebox__content--html display--none">
+                            <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="codebox__content--css display--none">
+                            <pre><code class="language-css">.appcontent {
+  min-height: 10vh;
+  width: 90%;
+  background-color: #FFFEF2;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin:0 auto;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!--END-->
             </section>
             <!-- Components-->
             <h2>Components</h2>
