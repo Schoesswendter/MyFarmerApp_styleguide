@@ -150,12 +150,17 @@ img{
 
 /* TEST */
 .imagebox{
-    max-width: 200px;
-    max-height: 200px;
-    background-color: red;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
     img{
         max-width: 200px;
         max-height: 200px;
+        padding-top: 20px;
+    }
+    a:hover {
+        background-color: $medium-color;
     }
 }
 

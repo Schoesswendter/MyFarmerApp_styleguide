@@ -111,16 +111,16 @@
                     The size of the logo can beadapted as needed,
                     but it must still be recognizable and therefore should not have a lower height than 150px. 
                     The logo is available in color and in black. 
-                    The black version is only to be used for purposes where single color is needed.
                 </p>
                 <div class= "imagebox">
-                <img src="images/sprout_sheep.svg" alt="logo">
-                <p><a href="images/sprout_sheep.svg" download="MyFarmerApp_Logo.svg">Download Logo here</a></p>
+                    <a href="images/sprout_sheep.svg" download="MyFarmerApp_Logo.svg">Download Logo here</a>
+                    <img src="images/sprout_sheep.svg" alt="logo">
                 </div>
-                <div class = "imagebox">
+                <p>The black version is only to be used for purposes where single color is needed.</p>
+                <div class= "imagebox">
+                    <a href="images/sprout_sheep_dark.svg" download="MyFarmerApp_Logo_Dark.svg">Download Black Logo here</a>
                     <img src="images/sprout_sheep_dark.svg" alt="logo">
-                    <p><a href="images/sprout_sheep_dark.svg" download="MyFarmerApp_Logo_Dark.svg">Download Black Logo here</a></p>
-                    </div>
+                </div>
             </section>
 
             <h2>CSS Methodology</h2>
@@ -174,16 +174,19 @@
                         <div class="codebox__content--contentBlockExample">
                         </div>
                         <div class="codebox__content--html display--none">
-                            <pre><code class="language-html">&lt;div class="appcontent"&gt;&lt;/div&gt;</code></pre>
+                            <pre><code class="language-html">
+&lt;figcaption class="photo photo--highlighted"&gt;
+    &lt;img class="photo__img" src="cyanus_segetum.jpg"&gt;
+    &lt;figcaption class="photo__caption"&gt;Cyanus Segentum&lt;/figcaption&gt;
+&lt;/figcaption&gt;</code></pre>
                         </div>
                         <div class="codebox__content--css display--none">
-                            <pre><code class="language-css">.appcontent {
-  min-height: 10vh;
-  width: 90%;
-  background-color: #FFFEF2;
-  border: 1px black solid;
-  border-radius: 5px;
-  margin:0 auto;
+                            <pre><code class="language-css">
+.photo--highlighted .photo__img { 
+    ... 
+}
+.photo--highlighted .photo__caption { 
+    ... 
 }</code></pre>
                         </div>
                     </div>
