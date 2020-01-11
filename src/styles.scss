@@ -51,7 +51,7 @@ $transparent-color: rgba(0, 0, 0, 0);
     }
     p {
         padding-top: 1.5vh;
-        font-size: 110%;
+        font-size: 1em;
     }
     &__linksection {
         width: 80%;
@@ -147,22 +147,37 @@ img{
     padding: 1px;
     width: 250px;
 }
-
-/* TEST */
+/*image display box*/
 .imagebox{
-    max-width: 300px;
+    max-width: 350px;
     padding: 20px;
     margin: 10px;
     text-align: center;
     img{
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 300px;
         padding-top: 20px;
     }
     a:hover {
         background-color: $medium-color;
     }
 }
+
+/*font samples*/
+#font-samples{
+    margin:20px;
+    font-size: 1.2em;
+    :nth-child(2){
+        font-style: italic;
+    }
+    :nth-child(3){
+        font-weight: 700;
+    }
+    :nth-child(4){
+        font-weight: 700;
+        font-style: italic;
+    }
+}
+
 
 /*code example box*/
 
@@ -331,7 +346,7 @@ pre[class*="language-"] {
 .dropdown-btn, .dropdown-container a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25em;
     color: $dark-color;
     display: block;
     border: none;

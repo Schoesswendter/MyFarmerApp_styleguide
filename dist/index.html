@@ -89,6 +89,7 @@
                     It consists mainly of shades ranging from green to brown. For a better readability and to prevent
                     the over saturation of colors, the text is displayed in black on a white background.
                     <div class="imagebox"></div>
+                    <!-- Colors here -->
                 </p>
             </section>
             <section id="typography">
@@ -101,6 +102,12 @@
                 <p>
                     Link: <a href="https://fonts.google.com/specimen/Lora">Google Font Lora</a><br>
                 </p>
+                <div id="font-samples">
+                    <p>This is an example Text (Regular, font-weight: 400)</p>
+                    <p>This is an example Text (Italic, font-weight: 400)</p>
+                    <p>This is an example Text (Bold, font-weight: 700)</p>
+                    <p>This is an example Text (Bold & Italic, font-weight: 700)</p>
+                </div>
                 <p>
                     As second fall back font-family we use Serif.
                 </p>
@@ -127,29 +134,22 @@
             <section id="codeStyle">
                 <h3>Code Style</h3>
                 <p>
-                    Indentations, Units, File Structure, pre-processor
+                    As indentations we use 4 spaces to indent the code and follow the general code style conventions of HTML and CSS.
                 </p>
-                <div class="codebox show--example">
-                    <nav>
-                        <ul>
-                            <li>Example</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </nav>
-                    <div class="codebox__content">
-                        <div class="codebox__content--contentBlockExample">
-                            SOON
-                        </div>
-                        <div class="codebox__content--html display--none">
-                            <pre><code class="language-html">SOON</code></pre>
-                        </div>
-                        <div class="codebox__content--css display--none">
-                            <pre><code class="language-css"> SOON
-</code></pre>
-                        </div>
-                    </div>
-                </div>
+                <p>
+                    The font-sizes are declaired in em. 
+                    To set height and width we use % or vh/vw. 
+                    For padding and margin em or % are used.
+                </p>
+                <p>
+                    SASS is used as the Pre-Processor for CSS.
+                </p>
+                <p>
+                    The file structure should look like the following example. SASS files should be divided into multiple partials.
+                </p>
+                <div class= "imagebox">
+                    <img src="images/file_structure.png" alt="file structure">
+                </div>        
             </section>
             <section id="classNaming">
                 <h3>Class Naming</h3>
