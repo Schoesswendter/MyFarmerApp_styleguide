@@ -1,29 +1,62 @@
-const webpack = require('webpack');
-const path = require('path');
+const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const config = {
-  entry: './src/index.js',
+module.exports = {
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist")
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      inject: true
+    }),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: 'style.css',
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/images',
+        to: 'images',
+      },
+    ])
+  ],
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(png|jpe?g|svg)$/i,
         use: [
-          'style-loader',
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: false,
+              disable: false,
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+
           'css-loader',
-          'sass-loader'
-        ]
-      },
-      {
-        test: /\.svg$/,
-        use: 'file-loader'
-      },
-      {
-        test: /\.png$/,
-        use: 'file-loader'
+          'sass-loader',
+        ],
       },
       {
         test: /\.css/,
@@ -31,11 +64,9 @@ const config = {
       },
       {
         test: /\.html$/,
-        use: 'file-loader'
+        use: 'html-loader'
       }
-    ]
-    
-  }
-};
 
-module.exports = config;
+    ],
+  },
+}

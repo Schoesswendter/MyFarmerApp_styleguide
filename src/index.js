@@ -5,7 +5,5 @@ import 'prismjs/components/prism-handlebars.min.js'
 import 'prismjs/components/prism-lua.min.js'
 import 'prismjs/components/prism-markup-templating';
 
-import './index.html';
-
 
 console.log("hello world!");
