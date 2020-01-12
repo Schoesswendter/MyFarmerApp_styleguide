@@ -435,13 +435,24 @@ pre[class*="language-"] {
       float: right;
   }
 
-/* Layout */
-
 .navigation--app{
     background-color: rgba(34, 59, 20, 0.8);
     height: 6vh;
     width: 60%;
     margin: 0 auto;
+}
+/* Layout */
+
+#layout--detail::before {
+    content: url('images/layout3.png');
+}
+
+#layout--calender::before {
+    content: url('images/layout2.png');
+}
+
+#layout--weather::before {
+    content: url('images/layout1.png');
 }
 
 /*FOOTER*/
