@@ -5,7 +5,6 @@
     <title>MyFarmerApp</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -17,7 +16,7 @@
     <header>
         <nav class="topnav">
             <div class="topnav__logosection">
-                <img src="images/sprout_sheep.svg" alt="logo">
+                <p class="logo__sheep--before"></p>
                 <p>Styleguide</p>
             </div>
             <div class="topnav__linksection">
@@ -121,12 +120,12 @@
                 </p>
                 <div class= "imagebox">
                     <a href="images/sprout_sheep.svg" download="MyFarmerApp_Logo.svg">Download Logo here</a>
-                    <img src="images/sprout_sheep.svg" alt="logo">
+                    <p class="logo__sheep--big"></p>
                 </div>
                 <p>The black version is only to be used for purposes where single color is needed.</p>
                 <div class= "imagebox">
                     <a href="images/sprout_sheep_dark.svg" download="MyFarmerApp_Logo_Dark.svg">Download Black Logo here</a>
-                    <img src="images/sprout_sheep_dark.svg" alt="logo">
+                    <p class="logo__sheep--big--dark"></p>
                 </div>
             </section>
 
@@ -268,7 +267,7 @@
                         <div class="codebox__content--css display--none">
                             <pre><code class="language-css">h1 {
   color: white;
-  font-family: 'Slabo 27px', serif;
+  font-family: "Lora", serif;
   letter-spacing: 2px;
   font-weight: lighter;
   padding: 2%;
@@ -276,14 +275,14 @@
 }
 h2{
   color: black;
-  font-family: 'Slabo 27px', serif;
+  font-family: "Lora", serif;
   font-weight: lighter;
   padding: 1%;
   text-align: center;
 }
 h3{
   color: white;
-  font-family: 'Slabo 27px', serif;
+  font-family: "Lora", serif;
   text-align: left;
   font-weight: lighter;
   padding: 1%;
@@ -343,7 +342,7 @@ li {
     color: black;
     width: 90%;
     margin: 0 auto;
-    font-family: 'Slabo 27px', serif;
+    font-family: "Lora", serif;
 }
 li::before {
     content: url('../dist/images/growth.svg');
@@ -498,7 +497,7 @@ bellDeactivated.addEventListener('click', function() {
                             <pre><code class="language-css">.appcontent{
     display: flex;
     color: $dark-color;
-    font-family: 'Slabo 27px', serif;
+    font-family: "Lora", serif;
     p {
         padding: 5% 2vw;
         width: 400%;
@@ -586,7 +585,7 @@ bellDeactivated.addEventListener('click', function() {
                                     <div class="bar2"></div>
                                     <div class="bar3"></div>
                                 </div>
-                                <img src="images/sprout_sheep.svg" alt="logo">
+                                <p class="logo__sheep--after"></p>
                             </nav>
                         </div>
                         <div class="codebox__content--html display--none">

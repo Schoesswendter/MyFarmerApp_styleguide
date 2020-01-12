@@ -44,14 +44,21 @@ $transparent-color: rgba(0, 0, 0, 0);
         display: flex;
         width: 10vw;
     }
-    img {
-        padding: 1px;
-        flex-basis: 8vw;
-        width: 50%;
-    }
+    
     p {
         padding-top: 1.5vh;
         font-size: 1em;
+    }
+
+    .logo__sheep--before{
+        padding-top: 0;
+    }
+    .logo__sheep--before::before {
+        content: url('images/sprout_sheep.svg');
+        padding: 1px;
+        flex-basis: 8vw;
+        width: 50%;
+        padding-top: 0;
     }
     &__linksection {
         width: 80%;
@@ -162,6 +169,18 @@ img{
     }
 }
 
+.logo__sheep--big, .logo__sheep--big--dark{
+    margin: 10px;
+    text-align: center;
+}
+.logo__sheep--big::before {
+    content: url('images/sprout_sheep_big.svg');
+}
+
+.logo__sheep--big--dark::before {
+    content: url('images/sprout_sheep_dark.svg');   
+}
+
 /*font samples*/
 #font-samples{
     margin:20px;
@@ -244,7 +263,6 @@ pre[class*="language-"] {
 .codebox__content--headingExample {
     h1 {
         color: white;
-        font-family: 'Slabo 27px', serif;
         letter-spacing: 2px;
         font-weight: lighter;
         padding: 2%;
@@ -252,7 +270,6 @@ pre[class*="language-"] {
     }
     h2 {
         color: black;
-        font-family: 'Slabo 27px', serif;
         font-weight: lighter;
         padding: 1%;
         text-align: center;
@@ -260,7 +277,6 @@ pre[class*="language-"] {
     }
     h3 {
         color: white;
-        font-family: 'Slabo 27px', serif;
         text-align: left;
         font-weight: lighter;
         padding: 1%;
@@ -284,7 +300,6 @@ pre[class*="language-"] {
         color: black;
         width: 90%;
         margin: 0 auto;
-        font-family: 'Slabo 27px', serif;
     }
     li::before {
         content: url('images/growth.svg');
@@ -314,7 +329,6 @@ pre[class*="language-"] {
     .appcontent{
         display: flex;
         color: $dark-color;
-        font-family: 'Slabo 27px', serif;
         p {
             padding: 5% 2vw;
             width: 400%;
@@ -410,6 +424,17 @@ pre[class*="language-"] {
         padding: 0.5vh;
       }
   }
+
+  .logo__sheep--after {
+      padding: 0;
+      float: right;
+  }
+
+  .logo__sheep--after::after {
+      content: url('images/sprout_sheep.svg');
+      float: right;
+  }
+
 /* Layout */
 
 .navigation--app{
