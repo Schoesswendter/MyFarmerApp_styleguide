@@ -1,10 +1,12 @@
 $primary-color: green;
 $secondary-color: lightgreen;
+$transparent-green: rgba(34, 59, 20, 0.8);
 $light-color: white;
 $dark-color: black;
 $gray-color: #292828;
 $medium-color: lightgrey;
 $default-border: $medium-color 1px solid;
+$dark-border: $gray-color 1px solid;
 $nav-height: 6vh;
 $nav-width: 100vw;
 $codeblock-font: 'Roboto',
@@ -50,11 +52,7 @@ $transparent-color: rgba(0, 0, 0, 0);
         font-size: 1em;
     }
 
-    .logo__sheep--before{
-        padding-top: 0;
-    }
-    .logo__sheep--before::before {
-        content: url('images/sprout_sheep.svg');
+    img {
         padding: 1px;
         flex-basis: 8vw;
         width: 50%;
@@ -299,7 +297,6 @@ pre[class*="language-"] {
         background-color: $transparent-color;
         color: black;
         width: 90%;
-        margin: 0 auto;
     }
     li::before {
         content: url('images/growth.svg');
@@ -308,6 +305,23 @@ pre[class*="language-"] {
     li:hover {
         background-color: $transparent-color;
         cursor: auto;
+    }
+}
+
+/*Codeblock Links*/
+
+.codebox__content--links {
+    ul{
+        display: block;
+        width: 40%;
+    }
+    li{
+        background-color: $transparent-green;
+        padding: 6%;
+        border-bottom: $dark-border;
+    }    
+    li:hover{
+        background-color: rgba(23, 44, 10, 0.8);
     }
 }
 
@@ -436,24 +450,14 @@ pre[class*="language-"] {
   }
 
 .navigation--app{
-    background-color: rgba(34, 59, 20, 0.8);
+    background-color: $transparent-green;
     height: 6vh;
     width: 60%;
     margin: 0 auto;
 }
 /* Layout */
 
-#layout--detail::before {
-    content: url('images/layout3.png');
-}
 
-#layout--calender::before {
-    content: url('images/layout2.png');
-}
-
-#layout--weather::before {
-    content: url('images/layout1.png');
-}
 
 /*FOOTER*/
 
