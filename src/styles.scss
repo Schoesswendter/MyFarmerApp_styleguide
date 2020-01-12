@@ -5,8 +5,8 @@ $light-color: white;
 $dark-color: black;
 $gray-color: #292828;
 $medium-color: lightgrey;
-$default-border: $medium-color 1px solid;
-$dark-border: $gray-color 1px solid;
+$default-border: $medium-color 0.07em solid;
+$dark-border: $gray-color 0.07em solid;
 $nav-height: 6vh;
 $nav-width: 100vw;
 $codeblock-font: 'Roboto',
@@ -53,7 +53,7 @@ $transparent-color: rgba(0, 0, 0, 0);
     }
 
     img {
-        padding: 1px;
+        padding: 0.07em;
         flex-basis: 8vw;
         width: 50%;
         padding-top: 0;
@@ -65,7 +65,7 @@ $transparent-color: rgba(0, 0, 0, 0);
         a {
             text-decoration: none;
             color: $primary-color;
-            padding: 10px;
+            padding: 0.7em;
         }
     }
 }
@@ -82,8 +82,8 @@ $transparent-color: rgba(0, 0, 0, 0);
     &__dropbtn4 {
         background-color: $light-color;
         color: $primary-color;
-        font-size: 2.5vh;
-        padding: 1.36vh;
+        font-size: 1.3em;
+        padding: 0.6em;
         border: none;
     }
     &__content,
@@ -93,7 +93,7 @@ $transparent-color: rgba(0, 0, 0, 0);
         display: none;
         position: absolute;
         background-color: $light-color;
-        min-width: 160px;
+        min-width: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         a {
@@ -133,11 +133,11 @@ main {
 #h1--uppercase {
     text-transform: uppercase;
     font-size: 4em;
-    padding-bottom: 2vh;
+    padding-bottom: 0.25em;
 }
 
 h2, h3, h4 {
-    padding: 2vh 0;
+    padding: 0.8em 0;
 }
 
 h2{
@@ -149,18 +149,18 @@ h3{
 }
 
 img{
-    padding: 1px;
-    width: 250px;
+    padding: 0.06em;
+    width: 20vw;
 }
 /*image display box*/
 .imagebox{
-    max-width: 350px;
-    padding: 20px;
-    margin: 10px;
+    max-width: 20vw;
+    padding: 1.25em;
+    margin: 0.625em;
     text-align: center;
     img{
-        max-width: 300px;
-        padding-top: 20px;
+        max-width: 20vw;
+        padding-top: 1.25em;
     }
     a:hover {
         background-color: $medium-color;
@@ -168,7 +168,7 @@ img{
 }
 
 .logo__sheep--big, .logo__sheep--big--dark{
-    margin: 10px;
+    margin: 0.625em;
     text-align: center;
 }
 .logo__sheep--big::before {
@@ -181,7 +181,7 @@ img{
 
 /*font samples*/
 #font-samples{
-    margin:20px;
+    margin:1.2em;
     font-size: 1.2em;
     :nth-child(2){
         font-style: italic;
@@ -201,7 +201,7 @@ img{
 .codebox {
     background-color: $gray-color;
     color: $light-color;
-    margin: 2vh 0;
+    margin: 0.8em 0;
     ul {
         display: flex;
     }
@@ -223,7 +223,7 @@ img{
 }
 
 .codebox__content{
-    padding: 5vh 0;
+    padding: 2em 0;
 }
 
 .codebox__content--example {
@@ -246,8 +246,8 @@ pre[class*="language-"] {
     min-height: 10vh;
     width: 90%;
     background-color: $app-content-color;
-    border: 1px black solid;
-    border-radius: 5px;
+    border: 0.063em black solid;
+    border-radius: 0.35em;
     margin: 0 auto;
 }
 
@@ -261,7 +261,7 @@ pre[class*="language-"] {
 .codebox__content--headingExample {
     h1 {
         color: white;
-        letter-spacing: 2px;
+        letter-spacing: 0.1em;
         font-weight: lighter;
         padding: 2%;
         text-align: center;
@@ -300,7 +300,7 @@ pre[class*="language-"] {
     }
     li::before {
         content: url('images/growth.svg');
-        margin: 20px;
+        margin: 1.25em;
     }
     li:hover {
         background-color: $transparent-color;
