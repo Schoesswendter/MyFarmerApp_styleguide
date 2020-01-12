@@ -515,12 +515,3 @@ footer {
     background-color: $secondary-color;
     text-align: center;
 } 
-
-
-/* responsive */
-
-@media screen and (max-width: 600px) {
-    .topnav__linksection {
-      display: none;
-    }
-  }
