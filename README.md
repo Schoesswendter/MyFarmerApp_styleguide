@@ -1,6 +1,6 @@
-# empty-project
+# MyFarmerApp
 
-Empty project.
+This is the Styleguide for our MMP2a, we create an app that combines tipps for plants and current weather. 
 
 ## Building and running on localhost
 
