@@ -7,7 +7,7 @@ $gray-color: #292828;
 $medium-color: #d3d3d3;
 $default-border: $medium-color 0.07em solid;
 $dark-border: $gray-color 0.07em solid;
-$nav-height: 6vh;
+$nav-height: 3.2em;
 $nav-width: 100vw;
 $codeblock-font: 'Roboto',
 sans-serif;
@@ -500,7 +500,7 @@ pre[class*="language-"] {
 
 .navigation--app{
     background-color: $transparent-green;
-    height: 6vh;
+    height: $nav-height;
     width: 60%;
     margin: 0 auto;
 }
@@ -515,3 +515,12 @@ footer {
     background-color: $secondary-color;
     text-align: center;
 } 
+
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+    .topnav__linksection {
+      display: none;
+    }
+  }
